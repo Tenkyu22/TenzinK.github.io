@@ -1,0 +1,73 @@
+.control-holder {
+  position: relative;
+  width: 100%;
+  height: 11.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0D0D0D;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#progress[type="range"] {
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 30rem;
+  height: .2rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  height: 70%;
+}
+
+.controls img {
+  width: 1rem;
+  margin: 0 1rem;
+}
+
+.currently-playing {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currently-playing img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 .5rem;
+  border-radius: 3px;
+  align-items: center;
+}
+
+.current-song-title {
+  font-weight: 500;
+}
+
+.current-artist {
+  font-size: .8em;
+}
+#like {
+  width: 1rem;
+  margin-left: 1rem;
+}
+
+#play {
+  width: 2rem;
+  height: 2rem;
+}
+
+.volume {
+  margin-right: 1rem;
+}
+
+.volume[type="range"] {
+  height: 0.2rem;
+}

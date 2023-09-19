@@ -1,0 +1,155 @@
+.navigation {
+  text-align: right;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #06142E;
+  padding: 2px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  position: fixed;
+  z-index: 2;
+  font-size: 1em;
+  opacity: 90%;
+  box-shadow: 2px 1px 1px 1px #315F94;
+}
+
+a {
+  text-decoration: none;
+  color: #E7ECEF;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav ul li a {
+  margin-right: 25px;
+  font-family: "righteousregular";
+}
+
+nav a button {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 15px;
+  border-style: none;
+  border-color: #FF725E;
+  background-color: #E7ECEF;
+  color: #FF725E;
+  font-size: 1em;
+  font-family: "righteousregular";
+  transition: color .2s, background-color .2s;
+  cursor: pointer;
+}
+
+nav a button:hover {
+  background-color: #FF725E;
+  color: #E7ECEF;
+}
+
+nav a {
+  margin-right: 5rem;
+}
+
+nav icon {
+  margin-right: auto;
+  margin-left: 5rem;
+  color: #E7ECEF;
+  font-family: 'carbon_blockregular';
+  font-size: 1.75em;
+}
+
+.mobile-home {
+  display: none;
+}
+.mobile-close {
+  display: none;
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 600px){
+  .mobile-home {
+    display: block;
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+  }
+
+  .mobile-close {
+    display: none;
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+  }
+  .navigation ul, icon, .navigation button {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #06142E;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
+    z-index: 2;
+    font-size: 2em;
+    opacity: 100%;
+    box-shadow: none;
+    transition: width 1s;
+  }
+
+  nav ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    margin: 1rem;
+    font-family: "righteousregular";
+    font-weight: 700;
+  }
+  
+  nav a {
+    margin-right: 0;
+  }
+
+  nav icon {
+    font-family: "righteousregular";
+    margin: 1rem;
+    font-size: 1em;
+  }
+
+  nav a button {
+    margin: 1rem;
+    width: 12rem;
+    background-color: transparent;
+    height: 3.5rem;
+  }
+  nav a button:hover {
+    background-color: transparent;
+    color: #FF725E;
+  }
+}

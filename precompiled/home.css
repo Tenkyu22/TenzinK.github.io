@@ -1,0 +1,133 @@
+
+.home h1{text-align: center; color: #1B3358; font-size: 11em; font-family: "monotonregular";text-shadow: 3px 3px 0px #A3CEF1;}
+
+.home {
+  height: 100vh;
+  background-color: #E7ECEF;
+  background-image: url(/assets/main1.jpg);
+  background-size:cover;
+  color: #8B8C89;
+  align-items: center;
+  justify-content: center;
+}
+
+#circle {
+  transition: height 1.5s, width 1.5s, border-radius 1.5s, background-color 1.5s;
+  background-color: #FF4500;
+  height: 3.9rem;
+  width: 3.9rem;
+  margin-bottom: 0.80rem;
+  margin-left: 0.3rem;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#mess {
+  position: absolute;
+  color: #E7ECEF;
+}
+
+#circle:hover {
+  background-color: #F1916D;
+  height: 150rem;
+  width: 150rem;
+}
+
+#skills {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  color: #06142E;
+  transition: opacity 1s ease-in;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: .5rem;
+  column-gap: 5.5rem;
+}
+
+.skill-grid div {
+  display: inline-block;
+}
+
+.skill-grid div h3{
+  text-align: left;
+  margin: 1rem 0 1rem .2rem;
+}
+
+.skill-bar {
+  width: 25rem;
+  height: 1rem;
+  background-color:#1B3358;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 0;
+  background-color:#E7ECEF;
+  transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+  .home h1{font-size: 6em;}
+
+  #circle {
+    height: 2.375rem;
+    width: 2.375rem;
+    margin-bottom: 0.4875rem;
+    margin-left: 0.2rem;
+  }
+
+  #circle:hover {
+    height: 75rem;
+    width: 75rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .home h1{font-size: 4em; width: 20px; left:50%; transform: translate(-50%); word-wrap: break-word;
+    font-family: "monotonregular";text-shadow: none;
+  }
+  #mess {display: none;font-size: xx-small;}
+  #circle {
+    height: 1.45rem;
+    width: 1.45rem;
+    margin-bottom: 0.31rem;
+    margin-left: 1.2rem;
+  }
+
+  #circle:hover {
+    height: 75rem;
+    width: 75rem;
+  }
+
+  .skill-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-grid div h3{
+    text-align: left;
+    margin: 1rem 0 1rem 0rem;
+  }
+
+  .skill-bar {
+    width: 20rem;
+    height: .5rem;
+    background-color:#1B3358;
+  }
+}
+

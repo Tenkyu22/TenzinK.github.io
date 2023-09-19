@@ -1,0 +1,17 @@
+/*
+ #05161A
+ #072E33
+ #0C7075
+ #0F969C
+ #6DA5C0
+ #294D61
+*/
+
+
+.phone {
+    height: 667px;
+    width: 375px;
+    background-color: #05161A;
+    margin: auto;
+    border-radius: 20px;
+}

@@ -1,0 +1,33 @@
+@import "dashboard.css";
+body{background-color: #3D58F2;}
+h1{text-align: center; color: #F0F0F2;}
+p{text-align: center; color: #F0F0F2;}
+.navigation{
+  text-align: center;
+  font-style: italic;
+  align-content:space-between;
+  width: 100%;
+  border-radius: 1%;
+  background: #91A0F2;
+  padding: 2px 0px;
+}
+
+.navigation ul {
+  list-style: none;
+  position: relative;
+}
+
+.navigation ul li{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navigation ul li a{
+  margin-left: 50px;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  color: black;
+}

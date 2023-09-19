@@ -1,0 +1,66 @@
+h6{text-align: center; margin-top: 10px; text-transform: uppercase;}
+
+#dashboard{
+  margin-left: 50%;
+  margin-top: auto;
+  transform: translate(-50%);
+  border-radius: .5vh;
+  width: 140vh;
+  height: 70vh;
+  background-color: #A0A0A0;
+}
+
+.contacts{
+  float: left;
+  width: 45vh;
+  height: 70vh;
+  background-color: #F9F9F9;
+  border-radius: .5vh;
+}
+
+.contacts h6{
+  color: #BF625A;
+}
+
+.chat{
+  width: 95vh;
+  height: 65vh;
+  background-color: #91A0F2;
+  border-radius: .5vh;
+  float: right;
+}
+
+.chat h6{
+ color: white;
+}
+
+.text-box{
+  float: left;
+  width: 85vh;
+  height: 4.8vh;
+  border-radius: .5vh;
+  border-style: solid;
+  border-color: black;
+  border-width: .1vh;
+  background-color: #E5E5E5;
+}
+
+.text-box p{
+  color: #BF625A;
+}
+
+.search {
+  width: 40vh;
+  border-radius: 4vh;
+  border-style: solid;
+  border-width: .1vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.holder {
+  background-color: grey;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+}

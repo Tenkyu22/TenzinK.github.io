@@ -1,0 +1,180 @@
+.projects {
+  height: 100%;
+  background-color: #F1916D;
+  color: #274C77;
+}
+
+.spacer {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1{
+  margin-bottom: -12rem;
+  background-image: url('/assets/waves-haikei1.svg');
+}
+
+.main-header {
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #06142E;
+}
+
+.proj-display {
+  position: relative;
+  display: flex;
+  margin: 2rem 5rem;
+}
+
+.project-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proj-description-holder{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+.proj-description-holder h2 {
+  text-shadow: 5px 5px 1px #06142E;
+  color: #FFD700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 5em;
+}
+.proj-description-holder h3 {
+  color: #FFD700;
+  margin: .1rem 0;
+  font-size: 2em;
+}
+
+.proj-description {
+  width: 25rem;
+  margin-top: 0;
+}
+
+.proj-img {
+  background-color: black;
+  width: 45rem;
+  height: 25rem;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.right-img-animate, .left-img-animate {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all .7s ease-in-out;
+}
+
+.right-img-animate {
+  transform: translateX(100%);
+}
+.left-img-animate {
+  transform: translateX(-100%);
+}
+
+.show {
+  filter: blur(0);
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.proj-img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 600px){
+  .projects {
+    height: 100%;
+    background-color: #F1916D;
+    color: #274C77;
+  }
+  
+  .spacer {
+    aspect-ratio: 450/900;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .wave1{
+    margin-bottom: -35rem;
+    background-image: url('/assets/mobile-waves-haikei1.svg');
+  }
+
+  .main-header {
+    font-size: 3.5em;
+    text-align: center;
+    color: #06142E;
+  }
+
+  .project-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proj-display {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .proj-description-holder{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .proj-description-holder h2 {
+    text-shadow: 5px 5px 1px #06142E;
+    color: #FFD700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 2.5em;
+  }
+  .proj-description-holder h3 {
+    color: #FFD700;
+    margin: .1rem 0;
+    font-size: 1.5em;
+  }
+
+  .proj-description {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .proj-img {
+    background-color: black;
+    width: 25rem;
+    height: 15rem;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px;
+  }
+
+  .proj-2 {
+    flex-direction: column-reverse;
+  }
+}

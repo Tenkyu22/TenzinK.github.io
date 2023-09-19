@@ -1,0 +1,219 @@
+.about {
+  height: 100vh;
+  background-color: #06142E;
+  color: #A3CEF1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30rem;
+}
+
+.leftBlock {
+  display: flex;
+  position: relative;
+}
+
+.leftBlock ul{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 1.2rem;
+  top: 4.3rem;
+  /* user agent stylesheet interfering with design*/
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+.leftBlock ul img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 10px;
+}
+
+.face_pic {
+  height: 23rem;
+  width: 23rem;
+  border-style: 1px;
+}
+
+.rightBlock {
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+
+.personalInfo {
+  width: 35rem;
+}
+
+.personalInfo h2 {
+  font-size: 5em;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.name:hover {
+  color: #FF4500;
+}
+
+.personalInfo p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.illustration {
+  width: 20rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.illustration a{
+  margin: 0;
+  padding: 0;
+  font-size: .3em;
+}
+
+.vball-img {
+  left: 5rem;
+  top: 3rem;
+  width: 16.5rem;
+  border-radius: 50%;
+}
+
+.coding-img {
+  right: 5rem;
+  top: 0rem;
+}
+
+.hiking-img {
+  right: 9rem;
+  bottom: 2.5rem;
+}
+
+.design-img {
+  width: 15rem;
+  bottom: 1.5rem;
+  left: 35rem;
+}
+
+.bowling-img {
+  width: 20rem;
+  bottom: 2rem;
+  left: 3rem;
+}
+
+.main_pic {
+  height: 30rem;
+  width: 22rem;
+  border-radius: 1%;
+}
+
+#attribute {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 600px){
+  .about {
+
+  }
+  
+  .about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .leftBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5rem;
+  }
+  
+  .leftBlock ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  
+  .leftBlock ul img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 10px;
+  }
+  
+  .face_pic {
+    height: 20rem;
+    width: 20rem;
+  }
+  
+  .rightBlock {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0.5rem;
+  }
+  
+  .personalInfo {
+    margin-top: -2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .personalInfo h2 {
+    position: absolute;
+    top: 0;
+    font-size: 4.5em;
+    line-height: 5rem;
+  }
+  
+  .name:hover {
+    color: #FF4500;
+  }
+  
+  .personalInfo p {
+    width: 23rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  
+  .illustration {
+    display: none;
+  }
+  
+  .main_pic {
+    height: 30rem;
+    width: 22rem;
+    border-radius: 1%;
+  }
+  
+  #attribute {
+    display: none;
+  }
+}
