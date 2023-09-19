@@ -4,7 +4,7 @@
 .home {
   height: 100vh;
   background-color: #E7ECEF;
-  background-image: url(/assets/main1.jpg);
+  background-image: url(../assets/main1.jpg);
   background-size:cover;
   color: #8B8C89;
   align-items: center;
