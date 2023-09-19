@@ -28,6 +28,7 @@
 .proj-display {
   position: relative;
   display: flex;
+  justify-content: center;
   margin: 2rem 5rem;
 }
 
