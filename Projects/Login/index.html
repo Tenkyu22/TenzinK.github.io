@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LogIn/SignUp Page</title>
+    <link rel="stylesheet" href="precompiled/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,300;0,500;0,800;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hold">
+      <div class="login holder">
+          <h1>Login</h1>
+          <h4>Email or Username</h4>
+          <input class="input" id="username" type="text" name="username" value="" placeholder=" Type email or username">
+          <h4>Password</h4>
+          <input class="input" id="password" type="password" name="password" value="" placeholder=" Type password">
+          <p class="remem">Remember me?<input type="checkbox" name="" value=""></p>
+          <button type="button" name="button" class="button">LOG IN</button>
+          <p class="change">Don't have an Account? <a href="#" class="link" onclick="changeDiv()">Register</a></p>
+      </div>
+      <div class="register holder hidden">
+          <h1>Signup</h1>
+          <h4>Email</h4>
+          <input class="input" id="email" type="email" name="" value="" placeholder="Type email">
+          <h4>Username</h4>
+          <input class="input" id="newUsername" type="text" name="" value="" placeholder="Choose username">
+          <h4>Password</h4>
+          <input class="input" id="newPassword" type="password" name="" value="" placeholder="Choose Password">
+          <button type="button" name="button" class="button">SIGN UP</button>
+          <p class="change">Already have an Account? <a href="#" class="link" onclick="changeDiv()">Log In</a></p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
