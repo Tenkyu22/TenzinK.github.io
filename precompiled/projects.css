@@ -14,7 +14,7 @@
 
 .wave1{
   margin-bottom: -12rem;
-  background-image: url('/assets/waves-haikei1.svg');
+  background-image: url('../assets/waves-haikei1.svg');
 }
 
 .main-header {
@@ -114,7 +114,7 @@
   
   .wave1{
     margin-bottom: -35rem;
-    background-image: url('/assets/mobile-waves-haikei1.svg');
+    background-image: url('../assets/mobile-waves-haikei1.svg');
   }
 
   .main-header {

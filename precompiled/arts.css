@@ -6,12 +6,12 @@
 
 .wave2{
   margin-bottom: -12rem;
-  background-image: url('/assets/waves-haikei2.svg');
+  background-image: url('../assets/waves-haikei2.svg');
 }
 
 .wave3{
   margin-top: -11rem;
-  background-image: url('/assets/waves-haikei3.svg');
+  background-image: url('../assets/waves-haikei3.svg');
 }
 
 .art-display {
@@ -106,12 +106,12 @@
 @media screen and (max-width: 600px){
   .wave2{
     margin-bottom: -35rem;
-    background-image: url('/assets/mobile-waves-haikei2.svg');
+    background-image: url('../assets/mobile-waves-haikei2.svg');
   }
   
   .wave3{
     margin-top: -35rem;
-    background-image: url('/assets/mobile-waves-haikei3.svg');
+    background-image: url('../assets/mobile-waves-haikei3.svg');
   }
 
   .art-display {
