@@ -14,22 +14,30 @@
           <h1>Login</h1>
           <h4>Email or Username</h4>
           <input class="input" id="username" type="text" name="username" value="" placeholder=" Type email or username">
+          <p id="no-user" style="display: none;">Username doesn't exist</p>
           <h4>Password</h4>
           <input class="input" id="password" type="password" name="password" value="" placeholder=" Type password">
+          <p id="no-pass" style="display: none;">Password doesn't match</p>
           <p class="remem">Remember me?<input type="checkbox" name="" value=""></p>
-          <button type="button" name="button" class="button">LOG IN</button>
+          <button type="button" name="button" id="btn-login" class="button">LOG IN</button>
           <p class="change">Don't have an Account? <a href="#" class="link" onclick="changeDiv()">Register</a></p>
       </div>
       <div class="register holder hidden">
           <h1>Signup</h1>
           <h4>Email</h4>
-          <input class="input" id="email" type="email" name="" value="" placeholder="Type email">
+          <input class="input" id="newEmail" type="email" name="" value="" placeholder="Type email">
           <h4>Username</h4>
           <input class="input" id="newUsername" type="text" name="" value="" placeholder="Choose username">
-          <h4>Password</h4>
+          <h4>Password</h4> 
           <input class="input" id="newPassword" type="password" name="" value="" placeholder="Choose Password">
-          <button type="button" name="button" class="button">SIGN UP</button>
+          <p id="pass-valid">Password is valid, but user or email is empty.</p>
+          <p id="pass-invalid">Must include a number, capital letter, special<br> and longer than 8 characters.</p>
+          <button type="button" name="button" id="btn-signup" class="button">SIGN UP</button>
           <p class="change">Already have an Account? <a href="#" class="link" onclick="changeDiv()">Log In</a></p>
+      </div>
+      <div class="success holder" id="success">
+        <p>Log in Successful</p>
+        <p id="greetings"></p>
       </div>
     </div>
   </body>

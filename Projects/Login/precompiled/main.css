@@ -58,7 +58,9 @@ p {font-size: 0.75em;}
 }
 
 .hidden {
+  opacity: 0;
   display: none;
+  transition: opacity 1s;
 }
 
 .link {
@@ -74,4 +76,27 @@ p {font-size: 0.75em;}
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%);
+}
+
+#pass-invalid {
+  color: maroon;
+  font-size: .1em;
+  display: none;
+}
+
+#pass-valid {
+  color: green;
+  font-size: .1em;
+  display: none;
+}
+
+.success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.success p {
+  margin: 0;
+  font-size: 1em;
 }
