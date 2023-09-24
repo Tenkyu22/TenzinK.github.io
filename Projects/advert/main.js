@@ -28,3 +28,39 @@ function countdown() {
 
 
 setInterval(countdown, 1000);
+
+const next = document.getElementById('next');
+const previous = document.getElementById('previous');
+const watch1 = document.getElementById('watch1');
+const watch2 = document.getElementById('watch2');
+const watch3 = document.getElementById('watch3');
+const watches = [watch1, watch2, watch3];
+let currentWatch = 0;
+
+next.addEventListener('click', () => {
+    if ((watch1.style.display === 'block') && (watch2.style.display === 'none') && (watch3.style.display === 'none')) {
+        watch1.style.display = 'none';
+        watch2.style.display = 'block';
+        console.log("HELLO")
+    } else if ((watch1.style.display === 'none') && (watch2.style.display === 'block') && (watch3.style.display === 'none')) {
+        watch2.style.display = 'none';
+        watch3.style.display = 'block';
+    } else if ((watch1.style.display === 'none') && (watch2.style.display === 'none') && (watch3.style.display === 'block')) {
+        watch3.style.display = 'none';
+        watch1.style.display = 'block';
+    }
+});
+
+previous.addEventListener('click', () => {
+    if ((watch1.style.display === 'block') && (watch2.style.display === 'none') && (watch3.style.display === 'none')) {
+        watch1.style.display = 'none';
+        watch3.style.display = 'block';
+        console.log("HELLO")
+    } else if ((watch1.style.display === 'none') && (watch2.style.display === 'none') && (watch3.style.display === 'block')) {
+        watch3.style.display = 'none';
+        watch2.style.display = 'block';
+    } else if ((watch1.style.display === 'none') && (watch2.style.display === 'block') && (watch3.style.display === 'none')) {
+        watch2.style.display = 'none';
+        watch1.style.display = 'block';
+    }
+});

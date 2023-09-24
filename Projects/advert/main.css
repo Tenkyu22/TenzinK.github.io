@@ -3,7 +3,6 @@ body{background: linear-gradient(to right top, #151b32, #1c7781); font-family: '
 h1{font-weight: 500; font-size: 1.2em;color: #ff526b; text-align: center; }
 h2{font-size: 1.2em; font-weight: 600;}
 h3{font-size: 1.1em; font-weight: 300; margin: 0 0 0.5rem 0;}
-img{width: 15rem; position: absolute; right: -5rem; bottom: -2rem;}
 .box{
     height: 18rem;
     width: 32rem;
@@ -86,4 +85,19 @@ img{width: 15rem; position: absolute; right: -5rem; bottom: -2rem;}
 .btn:hover {
     background-color: #cfb13c;
     box-shadow: -1px 1px 30px 1px #ff526b;
+}
+
+
+.watch{
+    width: 15rem; 
+    position: absolute; 
+    right: -5rem; 
+    bottom: -2rem;
+}
+
+.icons {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 5rem;
+    cursor: pointer;
 }
