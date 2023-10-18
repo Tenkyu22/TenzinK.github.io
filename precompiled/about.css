@@ -14,15 +14,14 @@
 }
 
 .leftBlock {
-  display: flex;
   position: relative;
 }
 
 .leftBlock ul{
   list-style: none;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: absolute;
   right: 1.2rem;
@@ -47,11 +46,10 @@
 .rightBlock {
   margin-left: 2rem;
   border-radius: 0.5rem;
-  align-items: center;
 }
 
 .personalInfo {
-  width: 35rem;
+  width: 30rem;
 }
 
 .personalInfo h2 {
@@ -72,9 +70,6 @@
 .illustration {
   width: 20rem;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .illustration a{
@@ -124,14 +119,39 @@
   right: 1rem;
 }
 @media screen and (max-width: 1024px){
-    
+  .illustration {
+    width: 15rem;
+  }
+
+  .vball-img {
+    left: 2rem;
+    top: 1.5rem;
+    width: 11rem;
+    border-radius: 50%;
+  }
+
+  .coding-img {
+    right: 5rem;
+    top: 0rem;
+  }
+
+  .hiking-img {
+    right: 5rem;
+    bottom: 2.5rem;
+  }
+
+  .design-img {
+    bottom: 1.5rem;
+    left: 25rem;
+  }
+
+  .bowling-img {
+    bottom: 2rem;
+    left: 3rem;
+  }
 }
 
 @media screen and (max-width: 600px){
-  .about {
-
-  }
-  
   .about-main {
     display: flex;
     flex-direction: column;

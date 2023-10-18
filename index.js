@@ -4,16 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const message = document.getElementById("mess");
 
     hover.addEventListener('mouseover', () => {
-        show.style.display = 'block';
-        show.style.opacity = 1;
+        show.style.cssText = 'display: block; opacity: 100%; transiton: opacity 1s;';
         message.innerHTML = "Tenzin";
         message.style.display = 'none';
     });
 
     hover.addEventListener('mouseout', () => {
-        show.style.display = 'none';
-        show.style.opacity = 0;
-        show.style.transition = 'opacity 1s';
+        show.style.cssText = 'display: none; opacity: 0; transiton: opacity 1s;';
         message.style.display = 'block';
     });
 });
